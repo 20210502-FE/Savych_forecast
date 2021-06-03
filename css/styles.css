@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    position: relative;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    background-color: #3399CC;
+    color: #ffffff;
+    padding: 20px 0;
+    height: 100%;
+}
+
+.container__wrapper {
+    max-width: calc(100vw - 50px);
+    margin: 0 auto;
+}
+
+.container__title {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.container__content {
+    margin-bottom: 30px;
+}
+
+.weather-list, .weather-list__item {
+    border-color: #ffffff;
+    border-style: solid;
+}
+
+.weather-list {
+    font-size: 0;
+    border-width: 2px 0 0 2px;
+}
+
+.weather-list__item {
+    /*display: inline-block;*/
+    font-size: 25px;
+    /*width: 25%;*/
+    height: 90px;
+    padding: 15px 0;
+    text-align: center;
+    border-width: 0 2px 2px 0
+}
+
+.weather-list__item:hover {
+    opacity: 1;
+}
+
+/*li:hover ~ li {*/
+/*    opacity: .5;*/
+/*}*/
+
+.weather-list__item > span {
+    display: block;
+}
+
+/*.weather-list__item_50 {*/
+/*    width: 50%;*/
+/*}*/
+
+/*.weather-list__item_100 {*/
+/*    width: 100%;*/
+/*}*/
+
+.weather-list__item_bg-tiffany {
+    background-color: #3399CC;
+}
+
+.weather-list__item_bg-strikemaster {
+    background-color: #58CDCC;
+}
+
+.weather-list__item_bg-red {
+    background-color: #C24747;
+}
+
+.weather-list__item_bg-orange {
+    background-color: #E2674A;
+}
+
+.weather-list__item_bg-yellow {
+    background-color: #FECC66;
+}
+
+.weather-list__item_bg-green {
+    background-color: #99CC99;
+}
+
+.weather-list__item_bg-patina {
+    background-color: #669999;
+}
+
+.weather-list__item_bg-pink {
+    background-color: #CC6699;
+}
+
+.weather-list__item_bg-dark-green {
+    background-color: #4C9A67;
+}
+
+.weather-list__item_bg-purple {
+    background-color: #666699;
+}
+
+.container__bottom-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.weather-list {
+    display: flex;
+    /*flex-direction: row;*/
+    /*flex-wrap: no-wrap*/
+    flex-wrap: wrap;
+}
+
+.weather-list__item {
+    flex-basis: 25%;
+    max-width: 25%;
+}
+
+.weather-list__item_50 {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+.weather-list__item_100 {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+.content {
+    background-color: #4C9A67;
+    margin-top: 40px;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.content__item {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+}
